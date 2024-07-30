@@ -1,3 +1,8 @@
+header {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .active-font {
   color: #93c2bc;
   font-weight: bold;

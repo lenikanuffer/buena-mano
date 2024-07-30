@@ -4,13 +4,13 @@ import './Header.css'
 function Header() {
     return (
 
-        <header className='max-w-full flex m-2 justify-between'>
-           <div className='w-44'>
-            <img src='logo.png' alt='buena mano logo' className='w-40 m-3 ' />
+        <header className=' flex flex-row justify-between items-start '>
+           <div className='flex flex-row justify-start items-start'>
+            <img src='logo.png' alt='buenamano logo' className='w-40  my-3 ' />
            </div>
-           <div className=''>
+           <div className='flex justify-end text-right'>
             <nav>
-                <ul className='list-none flex flex-col text-right mt-4 mr-2 text-xs gap-2'>
+                <ul className='list-none flex flex-col text-right text-xs gap-2'>
                     <li>
                         <Link  href='/Inicio' className={(active) => (active ? 'active-font' : '')}>INICIO</Link></li>
                     <li>
