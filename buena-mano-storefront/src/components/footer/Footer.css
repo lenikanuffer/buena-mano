@@ -1,5 +1,5 @@
 footer {
-  background-color: #93c2bc;
+  background-color: var(--bmcolor);
 }
 #copyrights {
   font-size: 10px;

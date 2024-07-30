@@ -28,7 +28,7 @@ function Footer() {
         </div>
         <div id='copyrights' className='flex flex-col mt-3 md:justify-end'>
             <p>&copy; Todos los derechos reservados.</p> 
-            <p>Diseñado in Berlín </p>
+            <p>Diseñado con ♡ in Berlín </p>
             <p>2024</p>
         </div>
        </footer>
