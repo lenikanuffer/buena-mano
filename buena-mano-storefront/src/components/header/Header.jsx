@@ -12,7 +12,7 @@ function Header() {
             <nav>
                 <ul className='list-none flex flex-col text-right text-xs gap-2 mt-4'>
                     <li>
-                        <Link  href='/Inicio' className={(active) => (active ? 'active-font' : '')}>INICIO</Link></li>
+                        <Link  href='/' className={(active) => (active ? 'active-font' : '')}>INICIO</Link></li>
                     <li>
                         <Link href='/Productos' className={(active) => (active ? 'active-font' : '')} >PRODUCTOS</Link></li>
                     <li>

@@ -1,4 +1,4 @@
-export const distributionPoints = [
+export const distributionData = [
     {
         id: 'b1',
         name: 'Cúrcuma',
@@ -58,63 +58,63 @@ export const distributionPoints = [
     {
         id: 'b9',
         name: 'Cactus',
-        address: 'Av. Las Salinas 2330, Pichilemu',
+        address: 'Av. Las Salinas 2330, Pichilemu.',
         collection: 'otros'
     },
 
     {
         id: 'b10',
         name: 'Di Pasta',
-        address: 'José Joaquín Prieto 383, Pichilemu',
+        address: 'José Joaquín Prieto 383, Pichilemu.',
         collection: 'otros'
     },
 
     {
         id: 'b11',
         name: 'Parrilla de Pino',
-        address: 'Av. Cahuel Km 5,7, Sector Buenos Aires, Pichilemu',
+        address: 'Av. Cahuel Km 5,7, Sector Buenos Aires, Pichilemu.',
         collection: 'otros'
     },
 
     {
         id: 'b12',
         name: 'Los Piures - Club Social',
-        address: 'Camino Punta de Lobos Lote 3.3, Pichilemu',
+        address: 'Camino Punta de Lobos Lote 3.3, Pichilemu.',
         collection: 'otros'
     },
 
     {
         id: 'b13',
         name: 'Pepe Cuervo',
-        address: 'Av. Costanera 610, Pichilemu',
+        address: 'Av. Costanera 610, Pichilemu.',
         collection: 'otros'
     },
 
     {
         id: 'b14',
         name: 'La Calma Emporio',
-        address: 'Av. Comercio 1200, Pichilemu',
+        address: 'Av. Comercio 1200, Pichilemu.',
         collection: 'otros'
     },
 
     {
         id: 'b15',
         name: 'Mareal',
-        address: 'Av. Daniel Ortúzar 255, Pichilemu',
+        address: 'Av. Daniel Ortúzar 255, Pichilemu.',
         collection: 'otros'
     },
 
     {
         id: 'b16',
         name: 'Hotel Alaia',
-        address: 'Camino Punta de Lobos 681, Pichilemu',
+        address: 'Camino Punta de Lobos 681, Pichilemu.',
         collection: 'otros'
     },
 
     {
         id: 'b17',
         name: 'La Orillera',
-        address: 'Camino Punta de Lobos 681, Pichilemu',
+        address: 'Camino Punta de Lobos 681, Pichilemu.',
         collection: 'otros'
     },
 

@@ -1,45 +1,45 @@
 import { useState } from 'react';
-import { distributionPoints } from '../../assets/data/distribution-points';
+import { distributionData } from '../../assets/data/distribution-points';
 import SingleDistributor from '../singleDistributor/SingleDistributor';
 import './Distributors.css'
 
 const DistributorsList = () => {
 
-    const [data, setData] = useState(distributionPoints);
+    const [data] = useState(distributionData);
 
-    const barquilleraSellingPoints = data.filter(
-        (point) => point.collection == 'Barquillera'
-    );
-
-    const otherFormats = data.filter(
-        (point) => point.collection == 'otros'
-    );
-
-    const barquilleraSellingList = barquilleraSellingPoints.map((point, index) => {
-        return <SingleDistributor
-        key={index}
-        name={point.name}
-        address={point.address}
-        id={point.id} />
+    const sellingPoint = data.filter((point)=> {
+        if (point.collection == 'Barquillera')
+            return point;
     });
 
-    const othersFormatsList = otherFormats.map((point, index) => {
+    const otherFormats = data.filter((point)=>{
+        if (point.collection == 'otros')
+            return point;
+    });
+
+    const sellingPointsList = sellingPoint.map((point) => {
         return <SingleDistributor
-        key={index}
         name={point.name}
         address={point.address}
-        id={point.id} />
+        key={point.id} />
+    });
+
+    const othersFormatsList = otherFormats.map((point) => {
+        return <SingleDistributor
+        name={point.name}
+        address={point.address}
+        key={point.id} />
     });
 
     return (
 
         <section>
-            <div className='barquillera'>
-                <h1>Barquillera de siete sabores</h1>
-                <div>{barquilleraSellingPoints}</div>
+            <div className='barquillera text-sm text-center flex flex-col'>
+                <h1 className='mb-4'>BARQUILLERA SIETE SABORES</h1>
+                <div>{sellingPointsList}</div>
             </div>
-            <div className='others'>
-                <h1>Otros formatios</h1>
+            <div className='others text-sm text-center'>
+                <h1 className='mt-8 mb-4'>OTROS FORMATOS</h1>
                 <div>{othersFormatsList}</div>
 
             </div>
