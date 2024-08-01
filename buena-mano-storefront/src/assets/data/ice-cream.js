@@ -2,7 +2,7 @@ export const iceCreams = [
     {
         id: 1,
         name: 'Vainilla de Madagascar',
-        imageUrl: '',
+        imageUrl: './assets/images/sabor4.jpg',
         imageText: 'Vainilla de Madagascar',
         description: 'Su nombre habla de su país de origen. Nuestras vainas vienen del noreste de la isla de Madagascar, donde se cosechan en su punto de madurez, destacando al máximo su aroma y sabor.',
         ingredients: '',
@@ -76,7 +76,7 @@ export const iceCreams = [
     {
         id: 5,
         name: 'Chocolate vegano',
-        imageUrl: './images/sabor5.png',
+        imageUrl: '/images/sabor5.png',
         imageText: 'Chocolate vegano',
         description: 'Elaborado con sal de Cahuil.',
         ingredients: '',
@@ -94,7 +94,7 @@ export const iceCreams = [
     {
         id: 6,
         name: 'Chocolate blanco belga y maracuyá',
-        imageUrl: './images/sabor6.png',
+        imageUrl: '/images/sabor6.png',
         imageText: 'Chocolate blanco belga y maracuyá',
         description: 'Elaborado con sal de Cahuil.',
         ingredients: '',

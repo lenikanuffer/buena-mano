@@ -1,4 +1,4 @@
-import ProductCarousel from '../products-carousel/ProductCarousel'
+import ProductsList from '../productsList/ProductsList'
 import './Home.css'
 
 function Home() {
@@ -25,8 +25,7 @@ function Home() {
        
        <aside>
         <h1 className='flex text-xs justify-center mt-14'>PRODUCTOS RECOMENDADOS</h1>
-        
-        <ProductCarousel />
+        <ProductsList />
        </aside>  
        </>
     )

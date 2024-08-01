@@ -4,7 +4,7 @@ import './Contact.css'
 
 function Contact() {
     return (
-    <>
+    <div className='wrapper flex flex-col md:flex-row'>
        <main>
         <div className='flex flex-col items-center'>
             <h1 className='text-sm text-center'>ENCUENTRANOS EN</h1>
@@ -57,10 +57,8 @@ function Contact() {
             <p className='disclaimer text-center m-8'>*Puntos de venta independiente. Precios, formatos y sabores disponibles pueden variar.</p>
 
         </div>
-
-        
        </aside>
-       </> 
+       </div> 
     )
 }
 
