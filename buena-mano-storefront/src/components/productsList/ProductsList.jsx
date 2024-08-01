@@ -35,9 +35,9 @@ const ProductsList = () => {
 
     return (
 
-        <div>
+        <section className='flex flex-col gap-4 my-8 text-sm items-center md:flex-row md:flex-wrap md:mx-8'>
             {availableFlavoursList}
-        </div>
+        </section>
     )
 }
 
