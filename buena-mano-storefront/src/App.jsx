@@ -2,7 +2,7 @@ import {Link, Route, Switch} from 'wouter'
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
-import Products from './components/products/Products';
+import ProductsPage from './components/productsPage/ProductsPage';
 import Contact from './components/contact/Contact';
 import './App.css'
 
@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Switch>
         <Route path='/' component={Home} />
-        <Route path='/Productos' component={Products} />
+        <Route path='/Productos' component={ProductsPage} />
         <Route path='/Contacto' component={Contact} />
       </Switch>
       <Footer />

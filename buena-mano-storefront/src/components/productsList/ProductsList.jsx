@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {iceCreams} from '../../assets/data/ice-cream';
-import ProductCard from '../singleProductCard/ProductCard';
+import ProductCard from '../ProductCard/ProductCard';
 import './ProductsList.css'
 
 const ProductsList = () => {
@@ -29,6 +29,7 @@ const ProductsList = () => {
         scoop={flavour.scoop}
         halfLitre={flavour.halfLitre}
         litre={flavour.litre}
+        productLink={flavour.productLink}
         />
 )
     });

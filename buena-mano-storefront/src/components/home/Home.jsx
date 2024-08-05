@@ -1,4 +1,4 @@
-import ProductsList from '../productsList/ProductsList'
+import ProductsPreview from '../productsPreview/ProductsPreview'
 import './Home.css'
 
 function Home() {
@@ -25,7 +25,7 @@ function Home() {
        
        <aside>
         <h1 className='flex text-xs justify-center mt-14'>PRODUCTOS RECOMENDADOS</h1>
-        <ProductsList />
+        <ProductsPreview />
        </aside>  
        </>
     )
