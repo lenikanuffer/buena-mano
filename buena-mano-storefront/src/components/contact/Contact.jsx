@@ -1,3 +1,4 @@
+import {Link} from 'wouter';
 import { Whatsapp} from '../../assets/icons/icons';
 import DistributorsList from '../distributors/Distributors';
 import './Contact.css'
@@ -6,6 +7,13 @@ function Contact() {
     return (
     <div className='wrapper flex flex-col md:flex-row'>
        <main>
+
+        <div className='channels flex justify-center'>
+            <button className='channel-bttn current '>Personas</button>
+            <Link href='/Horeca'>
+            <button className='channel-bttn'>Canal HORECA</button></Link> 
+
+        </div>
         <div className='flex flex-col items-center'>
             <h1 className='text-sm text-center'>ENCUENTRANOS EN</h1>
             <p className='text-sm text-center m-8'>Avenida Comercio 1926, Playa Hermosa, Pichilemu, Chile</p>
@@ -41,11 +49,12 @@ function Contact() {
         <p>Ofrecemos envío a domicilio para la zona de Pichilemu urbano y alrededores</p>
         <p>Consulta precios y disponibilidad en nuestro Whatsapp:</p>
         </div>
-        <div className='flex justify-center m-4 gap-4 items-center'>
-        <Whatsapp />
-        <p className='text-sm'>+56986203042</p>
+        <div className='flex justify-center m-4 gap-4 items-center mb-8'>
+        <a href='https://wa.me/56986203042'>
+        <Whatsapp /></a> 
+        <a href='https://wa.me/56986203042'>
+        <p className='text-sm'>+56986203042</p></a> 
         </div>
-        
         </div>
        </main>
        <aside>

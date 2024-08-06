@@ -12,9 +12,9 @@ const SnackCard = ({name, img, altText, description, localProduct, glutenFree, s
         <div className='card-container flex flex-col w-80 border border-solid rounded-xl p-4'>
             <div className='image-title flex flex-col items-center mb-4'>
                 <h1 className='mb-4'>{name}</h1>
-                <img src={getImageUrl(img)} alt={altText} className='w-64 rounded-xl'/>
+                <img src={getImageUrl(img)} alt={altText} className='w-64 h-72 rounded-xl '/>
             </div>
-            <div className='content-container flex flex-col'>
+            <div className='content-container flex flex-col '>
                 <div className='description text-justify mb-4'>
                     <p>{description}</p>
                 </div>

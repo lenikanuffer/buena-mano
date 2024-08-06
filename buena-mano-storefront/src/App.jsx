@@ -4,6 +4,7 @@ import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
 import ProductsPage from './components/productsPage/ProductsPage';
 import Contact from './components/contact/Contact';
+import Horeca from './components/horeca/Horeca';
 import './App.css'
 
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' component={Home} />
         <Route path='/Productos' component={ProductsPage} />
         <Route path='/Contacto' component={Contact} />
+        <Route path='/Horeca' component={Horeca} />
       </Switch>
       <Footer />
       </div>

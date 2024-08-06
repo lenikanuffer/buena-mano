@@ -9,6 +9,7 @@ Currently, two official plugins are available:
 
 Tailwinds
 
-<!-- Google Maps API
+https://react-slick.neostack.com/docs/get-started
 
-npm install @vis.gl/react-google-maps -->
+npm install react-slick --save
+npm install slick-carousel --save

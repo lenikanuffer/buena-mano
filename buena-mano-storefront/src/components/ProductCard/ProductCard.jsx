@@ -1,31 +1,30 @@
-import {Route, useParams} from 'wouter';
 import PropTypes from 'prop-types';
 import './ProductCard.css'
 import { SugarFree } from '../../assets/icons/icons';
 
-const ProductCard = ({name, img, altText, description, localProduct, glutenFree, sugarFree, lactoseFree, vegan, scoop, halfLitre, litre, productLink}) => {
+const ProductCard = ({name, img, altText, description, localProduct, glutenFree, sugarFree, lactoseFree, vegan, scoop, halfLitre, litre}) => {
     
 
     function getImageUrl(name) {
         return new URL(`../../assets/images/${name}`, import.meta.url).href
       }
 
-      
- 
- 
+
+
     return (
-        <div className='card-container flex flex-col w-80 border border-solid rounded-xl p-4'>
+       
+        <div className='card-container flex flex-col w-80  border border-solid rounded-xl p-4 '>
             <div className='image-title flex flex-col items-center mb-4'>
                 <h1 className='mb-4'>{name}</h1>
-                <img src={getImageUrl(img)} alt={altText} className='w-64 rounded-xl'/>
+                <img src={getImageUrl(img)} alt={altText} className='w-64 h-72 rounded-xl'/>
             </div>
-            <div className='content-container flex flex-col'>
+            <div className='content-container flex flex-col content-between '>
                 <div className='description text-justify mb-4'>
                     <p>{description}</p>
                 </div>
                 <div className='formats-sellos flex gap-14'>
                     <div className='formats '>
-                        <h1 className='text-sm'>FORMATOS</h1>
+                        <h1 className='text-sm mb-2'>FORMATOS</h1>
                         <ul>
                             <li>Bola: ${scoop}</li>
                             <li>1/2 litro: ${halfLitre}</li>
@@ -44,7 +43,10 @@ const ProductCard = ({name, img, altText, description, localProduct, glutenFree,
                     
                 </div>
                 <div className='button flex justify-end mt-4'>
-                        <button className='button-det p-3 border border-solid rounded-full text-white border-white'>  Detalles </button>
+                    
+                        <button className='button-det p-3 border border-solid rounded-full text-white border-white' >  Detalles 
+                        
+                        </button>
                 </div>
             </div>
         </div>
