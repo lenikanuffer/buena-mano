@@ -1,8 +1,9 @@
+import {Link} from 'wouter';
 import PropTypes from 'prop-types';
-import './ProductCard.css'
+import './ProductCard.css';
 import { SugarFree } from '../../assets/icons/icons';
 
-const ProductCard = ({name, img, altText, description, localProduct, glutenFree, sugarFree, lactoseFree, vegan, scoop, halfLitre, litre}) => {
+const ProductCard = ({name, img, altText, description, localProduct, glutenFree, sugarFree, lactoseFree, vegan, scoop, halfLitre, litre, id}) => {
     
 
     function getImageUrl(name) {
@@ -43,10 +44,10 @@ const ProductCard = ({name, img, altText, description, localProduct, glutenFree,
                     
                 </div>
                 <div className='button flex justify-end mt-4'>
-                    
+                        <Link href={`/Productos/${id}`}>
                         <button className='button-det p-3 border border-solid rounded-full text-white border-white' >  Detalles 
                         
-                        </button>
+                        </button></Link>
                 </div>
             </div>
         </div>

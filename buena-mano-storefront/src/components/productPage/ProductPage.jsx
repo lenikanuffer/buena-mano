@@ -1,10 +1,18 @@
+import { Route, useParams } from "wouter";
 import { Local, SugarFree, GlutenFree } from '../../assets/icons/icons'
 import ProductsPreview from '../productsPreview/ProductsPreview'
-import './SingleProduct.css'
+import './ProductPage.css'
+import {iceCreams} from '../../assets/data/ice-cream';
 
 
-const ProductPage = ({name, img, altText, description, localProduct, glutenFree, sugarFree, lactoseFree, vegan, scoop, halfLitre, litre, productLink, ingredients}) => {
+const ProductPage = () => {
+
+    const params = useParams();
+   
     
+    const {name, imageUrl, altText, description, localProduct, glutenFree, sugarFree, lactoseFree, vegan, scoop, halfLitre, litre, productLink, ingredients} = iceCreams.filter(singleIceCream => singleIceCream.id == params.id )[0]
+    
+
     function getImageUrl(name) {
         return new URL(`../../assets/images/${name}`, import.meta.url).href
       }
@@ -15,7 +23,7 @@ const ProductPage = ({name, img, altText, description, localProduct, glutenFree,
      <div className='product-container flex flex-col md:flex-row md:items-start '>
         <div className='image-container flex flex-col items-center gap-5 p-5 pb-10 md:w-2/6 md:bg-white '>
             <h1 className='text-sm text-center text-white md:text-black'>{name}</h1>
-            <img src={getImageUrl(img)} alt={altText} className='w-80 rounded-lg' />
+            <img src={getImageUrl(imageUrl)} alt={altText} className='w-80 rounded-lg' />
         </div>
         <div className='description-icons-container flex text-sm m-5 gap-5 md:w-2/6 md:mt-14'>
             <div className='description text-justify w-2/4'>

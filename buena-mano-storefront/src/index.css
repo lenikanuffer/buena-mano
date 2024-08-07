@@ -13,10 +13,40 @@
 }
 
 body {
-  /* margin: 0 auto; */
   font-family: "Montserratregular", sans-serif;
 }
 
 :root {
   --bmcolor: #93c2bc;
+}
+
+/* buttons */
+
+.default-bttn {
+  color: white;
+  font-size: small;
+  font-weight: bolder;
+  background-color: var(--bmcolor);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  margin: 15px;
+}
+
+.current-bttn {
+  color: white;
+  font-size: small;
+  font-weight: bolder;
+  background-color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 4px var(--bmcolor);
+  border-left: solid 2px var(--bmcolor);
+  font-size: small;
+  border-radius: 25px;
+  margin: 10px;
 }

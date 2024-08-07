@@ -21,7 +21,7 @@ export const iceCreams = [
     {
         id: 2,
         name: 'Chocolate Buenamano',
-        imageUrl: 'sabor4.jpg',
+        imageUrl: 'sabor2.jpg',
         imageText: 'Chocolate Buenamano',
         description: 'Este helado combina una veriedad de texturas y sabores: la suavidad del chocolate Belga, la dulzura del toffe y crujientes bolitas de cereal. Una conbinación perfecta para los que aman sorprenderse con cada probada.',
         ingredients: 'Leche, huevo, azúcar, chocolate Belga 70% cacao, toffee, bolitas de cereal bañdas en chocolate.',

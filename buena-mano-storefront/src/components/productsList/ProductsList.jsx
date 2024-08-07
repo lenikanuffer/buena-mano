@@ -30,6 +30,7 @@ const ProductsList = () => {
         halfLitre={flavour.halfLitre}
         litre={flavour.litre}
         productLink={flavour.productLink}
+        id={flavour.id}
         />
 )
     });

@@ -9,9 +9,9 @@ function Contact() {
        <main>
 
         <div className='channels flex justify-center'>
-            <button className='channel-bttn current '>Personas</button>
+            <button className='current-bttn '>Personas</button>
             <Link href='/Horeca'>
-            <button className='channel-bttn'>Canal HORECA</button></Link> 
+            <button className='default-bttn'>Canal HORECA</button></Link> 
 
         </div>
         <div className='flex flex-col items-center'>

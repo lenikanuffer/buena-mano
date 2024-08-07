@@ -1,12 +1,13 @@
 import {Link} from 'wouter';
-import './Header.css'
+import './Header.css';
+import logo from '/logo.png'
 
 function Header() {
     return (
 
         <header className=' flex justify-between  m-4 '>
            <div className='flex md:grow-[5] md:justify-center'>
-            <img src='logo.png' alt='buenamano logo' className='w-40  my-3 ' />
+            <img src={logo} alt='buenamano logo' className='w-40  my-3 ' />
            </div>
            <div className='flex justify-end '>
             <nav>

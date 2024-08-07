@@ -9,9 +9,9 @@ function Horeca () {
 
         <div className='channels flex justify-center'>
             <Link href='/Contacto'>
-            <button className='channel-bttn  '>Personas</button>
+            <button className='default-bttn  '>Personas</button>
             </Link>
-            <button className='channel-bttn current'>Canal HORECA</button>
+            <button className='current-bttn'>Canal HORECA</button>
         </div>
        <div className='intro-horeca'>
         <h1 className='text-sm text-center my-4'>DISTRIBUYE NUESTROS PRODUCTOS</h1>

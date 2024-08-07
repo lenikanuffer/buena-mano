@@ -1,0 +1,40 @@
+.hero-container {
+  background-image: url("../../assets/images/hero3.jpg");
+  background-color: rgba(2, 2, 2, 0.235);
+  width: 100vw;
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 30%;
+  background-position-y: center;
+  background-blend-mode: multiply;
+}
+.bm-intro {
+  font-size: 13px;
+}
+
+.visit-us-img {
+  background-image: url("../../assets/images/aside1.jpg");
+  background-size: cover;
+}
+
+.visit-us {
+  background-color: var(--bmcolor);
+}
+
+.about-us-img {
+  background-image: url("../../assets/images/nosotros.jpg");
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    height: 90vh;
+    background-position-y: 10%;
+    background-size: cover;
+  }
+
+  .bm-intro {
+    font-size: 15px;
+  }
+}
