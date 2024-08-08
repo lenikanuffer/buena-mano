@@ -1,3 +1,4 @@
+import Button from '../button/Button';
 import ProductsPreview from '../productsPreview/ProductsPreview'
 import './Home.css';
 import {Link} from 'wouter';
@@ -38,6 +39,7 @@ function Home() {
                 <Link href='/Contacto'>
                 <button className='current-bttn'>Saber más</button>
                 </Link>
+            
             </div>
         </section>
         <section className='about-us flex flex-col items-center mb-6'>

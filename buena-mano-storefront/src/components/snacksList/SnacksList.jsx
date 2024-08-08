@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import { snacks } from '../../assets/data/snacks';
-import SnackCard from '../snackscard/SnackCard';
+import SnackCard from '../snackCard/SnackCard';
 import './SnacksList.css'
 
 const SnacksList = () => {

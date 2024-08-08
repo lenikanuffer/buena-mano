@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {iceCreams} from '../../assets/data/ice-cream';
-import ProductCard from '../ProductCard/ProductCard';
+import ProductCard from '../productCard/ProductCard';
 import './ProductsList.css'
 
 const ProductsList = () => {
