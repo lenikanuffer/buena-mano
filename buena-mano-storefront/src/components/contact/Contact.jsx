@@ -1,3 +1,4 @@
+import Button from '../button/Button';
 import {Link} from 'wouter';
 import { Whatsapp} from '../../assets/icons/icons';
 import DistributorsList from '../distributors/Distributors';
@@ -9,9 +10,10 @@ function Contact() {
        <main>
 
         <div className='channels flex justify-center'>
-            <button className='current-bttn '>Personas</button>
+            <Button className='current-bttn'>Personas</Button>
+            
             <Link href='/Horeca'>
-            <button className='default-bttn'>Canal HORECA</button></Link> 
+            <Button className='default-bttn'>Canal HORECA</Button></Link> 
 
         </div>
         <div className='flex flex-col items-center'>

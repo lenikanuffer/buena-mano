@@ -1,8 +1,10 @@
+import {Link} from 'wouter';
+import Button from '../button/Button';
 import PropTypes from 'prop-types';
 import './SnackCard.css'
 import { SugarFree } from '../../assets/icons/icons';
 
-const SnackCard = ({name, img, altText, description, localProduct, glutenFree, sugarFree, lactoseFree, vegan, portion}) => {
+const SnackCard = ({name, img, altText, description, localProduct, glutenFree, sugarFree, lactoseFree, vegan, portion, id}) => {
     
     function getImageUrl(name) {
         return new URL(`../../assets/images/${name}`, import.meta.url).href
@@ -36,7 +38,9 @@ const SnackCard = ({name, img, altText, description, localProduct, glutenFree, s
                     
                 </div>
                 <div className='button flex justify-end mt-4'>
-                        <button className='button-det p-3 border border-solid rounded-full text-white border-white'>Detalles</button>
+                <Link href={`/Snacks/${id}`}>
+                        <Button className='default-bttn'>Detalles</Button>
+                </Link>
                 </div>
             </div>
         </div>
@@ -46,7 +50,7 @@ const SnackCard = ({name, img, altText, description, localProduct, glutenFree, s
 export default SnackCard
 
 SnackCard.propTypes = {
-    name: PropTypes.string.isRequired,
+    name: PropTypes.string,
     imageUrl: PropTypes.string,
     description: PropTypes.string,
     localProduct: PropTypes.bool,
@@ -55,6 +59,6 @@ SnackCard.propTypes = {
     lactoseFree: PropTypes.bool,
     vegan: PropTypes.bool,
     portion: PropTypes.number,
- 
+    id: PropTypes.number
 
 }

@@ -7,6 +7,7 @@ import Contact from './components/contact/Contact';
 import Horeca from './components/horeca/Horeca';
 import './App.css'
 import ProductPage from './components/productPage/ProductPage';
+import SnackPage from './components/snackPage/SnackPage';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/Contacto' component={Contact} />
         <Route path='/Horeca' component={Horeca} />
         <Route path='/Productos/:id' component={ProductPage}/>
+        <Route path='/Snacks/:id' component={SnackPage} />
       </Switch>
       <Footer />
       </div>

@@ -1,3 +1,4 @@
+import Button from '../button/Button';
 import {Link} from 'wouter';
 import PropTypes from 'prop-types';
 import './ProductCard.css';
@@ -5,11 +6,9 @@ import { SugarFree } from '../../assets/icons/icons';
 
 const ProductCard = ({name, img, altText, description, localProduct, glutenFree, sugarFree, lactoseFree, vegan, scoop, halfLitre, litre, id}) => {
     
-
     function getImageUrl(name) {
         return new URL(`../../assets/images/${name}`, import.meta.url).href
       }
-
 
 
     return (
@@ -45,9 +44,8 @@ const ProductCard = ({name, img, altText, description, localProduct, glutenFree,
                 </div>
                 <div className='button flex justify-end mt-4'>
                         <Link href={`/Productos/${id}`}>
-                        <button className='button-det p-3 border border-solid rounded-full text-white border-white' >  Detalles 
-                        
-                        </button></Link>
+                        <Button className='default-bttn'>Detalles</Button>
+                        </Link>
                 </div>
             </div>
         </div>
@@ -68,6 +66,7 @@ ProductCard.propTypes = {
     scoop: PropTypes.number,
     halfLitre: PropTypes.number,
     litre: PropTypes.number,
-    productLink: PropTypes.string
+    productLink: PropTypes.string,
+    id: PropTypes.number
 
 }

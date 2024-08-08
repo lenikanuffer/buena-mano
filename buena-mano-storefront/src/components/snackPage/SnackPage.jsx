@@ -1,16 +1,17 @@
-import { Route, useParams } from "wouter";
+import { useParams } from "wouter";
 import { Local, SugarFree, GlutenFree } from '../../assets/icons/icons'
 import ProductsPreview from '../productsPreview/ProductsPreview'
-import './ProductPage.css'
-import {iceCreams} from '../../assets/data/ice-cream';
+import './SnackPage.css'
+import {snacks} from '../../assets/data/snacks';
 
 
-const ProductPage = () => {
+const SnackPage = () => {
 
     const params = useParams();
    
     
-    const {name, imageUrl, altText, description, localProduct, glutenFree, sugarFree, lactoseFree, vegan, scoop, halfLitre, litre, ingredients} = iceCreams.filter(singleIceCream => singleIceCream.id == params.id )[0]
+    const {name, imageUrl, altText, description, localProduct, glutenFree, sugarFree, lactoseFree, vegan, portion, ingredients} = snacks.filter(singleSnack => singleSnack.id == params.id )[0]
+    
 
     function getImageUrl(name) {
         return new URL(`../../assets/images/${name}`, import.meta.url).href
@@ -44,11 +45,9 @@ const ProductPage = () => {
                 <p className='sellos'>{ingredients}</p>
             </div>
             <div className='formats'>
-                <p className='text-sm mb-2'>FORMATOS</p>
+                
                 <ul className='sellos'>
-                    <li>Bola: ${scoop}</li>
-                    <li>1/2 litro: ${halfLitre}</li>
-                    <li>Litro: ${litre}</li>
+                    <li>Porción: ${portion}</li>
                 </ul>
             </div>
         </div>
@@ -61,4 +60,4 @@ const ProductPage = () => {
     )
 }
 
-export default ProductPage
+export default SnackPage

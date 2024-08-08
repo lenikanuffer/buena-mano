@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        buenamano: {
+          default: ' #93c2bc'
+        } 
+      }
+    },
   },
   plugins: [],
 }

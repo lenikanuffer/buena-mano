@@ -1,3 +1,4 @@
+import Button from '../button/Button';
 import './Horeca.css';
 import {Link} from 'wouter';
 
@@ -9,9 +10,9 @@ function Horeca () {
 
         <div className='channels flex justify-center'>
             <Link href='/Contacto'>
-            <button className='default-bttn  '>Personas</button>
+            <Button className='default-bttn  '>Personas</Button>
             </Link>
-            <button className='current-bttn'>Canal HORECA</button>
+            <Button className='current-bttn'>Canal HORECA</Button>
         </div>
        <div className='intro-horeca'>
         <h1 className='text-sm text-center my-4'>DISTRIBUYE NUESTROS PRODUCTOS</h1>
@@ -33,7 +34,7 @@ function Horeca () {
                 <input id='phone' type="text" minLength='9' className='text-sm border contact-form'/>
                 <label htmlFor='message'  className='text-sm'>Mensaje*</label>
                 <textarea id="message" className='text-sm border contact-form' minLength='10' required rows='8' ></textarea>
-                <button type='submit' className='text-sm button-bm w-1/4 text-white self-end'>Enviar</button>
+                <Button type='submit' className='default-bttn text-sm button-bm w-1/4 text-white self-end'>Enviar</Button>
             </form>
 
         </div>

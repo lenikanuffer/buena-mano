@@ -23,7 +23,10 @@ function Home() {
             ¡Nuestros envases son compostables!</p>
             <div className='bttn-container flex self-end '>
             <Link href='/Productos'>
-            <button className='current-bttn '>Nuestro menú</button>
+            <Button className='current-bttn'>
+                Nuestro menú
+            </Button>
+           
             </Link>
             </div>
             </div>
@@ -37,7 +40,7 @@ function Home() {
             </div>
             <div className='bttn-container flex self-end mr-8'>
                 <Link href='/Contacto'>
-                <button className='current-bttn'>Saber más</button>
+                <Button className='current-bttn'>Saber más</Button>
                 </Link>
             
             </div>
@@ -51,7 +54,7 @@ function Home() {
             </div>
             <div className='bttn-container flex self-end mr-8'>
                 <Link href='/'>
-                <button className='current-bttn'>Saber más</button>
+                <Button className='current-bttn'>Saber más</Button>
                 </Link>
 
             </div>

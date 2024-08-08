@@ -1,11 +1,11 @@
-import { Instagram, Facebook, FacebookRound, Tiktok } from '../../assets/icons/icons'
+import { Instagram, Facebook, Tiktok } from '../../assets/icons/icons'
 import './Footer.css'
 
 
 function Footer() {
     return (
 
-       <footer className='flex flex-col md:flex-row md:justify-between p-5 text-white text-xs'>
+       <footer className='flex flex-col md:flex-row md:justify-between p-5 text-white text-xs bg-buenamano-default'>
         <div className='text-center md:mt-6'>
             <p>SIGUENOS!</p>
             <ul className='flex p-4 gap-5 justify-center'>

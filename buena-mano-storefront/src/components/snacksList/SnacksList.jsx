@@ -27,6 +27,7 @@ const SnacksList = () => {
         lactoseFree={snack.lactoseFree}
         vegan={snack.vegan}
         portion={snack.portion}
+        id={snack.id}
         />
 )
     });

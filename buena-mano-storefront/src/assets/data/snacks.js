@@ -1,6 +1,6 @@
 export const snacks = [
     {
-        id: 'a1',
+        id: 1,
         name: 'Brownie',
         imageUrl: 'snack1.jpg',
         imageText: 'Brownie',
@@ -16,7 +16,7 @@ export const snacks = [
     },
 
     {
-        id: 'a2',
+        id: 2,
         name: 'Blondie',
         imageUrl: 'snack2.jpg',
         imageText: 'Blondie',
@@ -32,7 +32,7 @@ export const snacks = [
     },
 
     {
-        id: 'a3',
+        id: 3,
         name: 'Manjar y coco',
         imageUrl: 'snack3.jpg',
         imageText: 'Manjar y coco',
@@ -48,7 +48,7 @@ export const snacks = [
     },
 
     {
-        id: 'a4',
+        id: 4,
         name: 'Pie de limón',
         imageUrl: 'snack4.jpg',
         imageText: 'Pie de limón',
@@ -64,7 +64,7 @@ export const snacks = [
     },
 
     {
-        id: 'a5',
+        id: 5,
         name: 'Torta de milhojas',
         imageUrl: 'snack5.jpg',
         imageText: 'Torta de milhojas',

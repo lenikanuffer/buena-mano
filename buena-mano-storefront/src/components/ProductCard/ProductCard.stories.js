@@ -1,8 +1,8 @@
-import ProductCard from './ProductCard';
+import ProductCard from "./ProductCard";
 
 
 export default {
-    title: 'Component/ProductCard',
+    title: 'Components/ProductCard',
     component: ProductCard,
     parameters: {
         layout: 'centered',
