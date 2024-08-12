@@ -13,3 +13,5 @@ https://react-slick.neostack.com/docs/get-started
 
 npm install react-slick --save
 npm install slick-carousel --save
+
+npm install react-hook-form

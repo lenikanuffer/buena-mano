@@ -1,3 +1,4 @@
+import Form from '../form/Form';
 import Button from '../button/Button';
 import './Horeca.css';
 import {Link} from 'wouter';
@@ -23,21 +24,11 @@ function Horeca () {
        </div>
 
         <div className='contact-horeca justify-center flex mb-10'>
-            <form action="" className='flex flex-col w-80  gap-2'>
-                <label htmlFor='name' name='name'  className='text-sm'>Nombre*</label>
-                <input id='name' type="text" minLength='6' required className='text-sm border contact-form'/>
-                <label htmlFor='company'  className='text-sm'>Empresa</label>
-                <input id='company' type="text" minLength='6' className='text-sm border contact-form'/>
-                <label htmlFor='email'  className='text-sm'>e-mail*</label>
-                <input id='email' type="text" minLength='6'  required className='text-sm border contact-form' />
-                <label htmlFor='phone'  className='text-sm'>Teléfono</label>
-                <input id='phone' type="text" minLength='9' className='text-sm border contact-form'/>
-                <label htmlFor='message'  className='text-sm'>Mensaje*</label>
-                <textarea id="message" className='text-sm border contact-form' minLength='10' required rows='8' ></textarea>
-                <Button type='submit' className='default-bttn text-sm button-bm w-1/4 text-white self-end'>Enviar</Button>
-            </form>
+          <Form />
 
         </div>
+
+        
 
        
 
