@@ -8,15 +8,40 @@ const ProductsPreview = () => {
 
     const [data] = useState(iceCreams);
 
-    const settings = {
+    var settings = {
         dots: true,
-        infinite: true,
+        infinite: false,
         speed: 500,
-        slidesToShow: 2.4,
-        slidesToScroll: 2,
-        
-    
-              };
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 6,
+              slidesToScroll: 6,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              initialSlide: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2.4,
+              slidesToScroll: 2
+            }
+          }
+        ]
+      };
     
 
     const previewFlavours = data.filter((flavour) => {
@@ -45,7 +70,7 @@ const ProductsPreview = () => {
 
     return (
        
-        <section className='slider-container mt-8 mb-12 mx-2 '>
+        <section className='slider-container mt-8 mb-12 mx-2'>
                <Slider {...settings} >
             {previewFlavoursList}
             </Slider>

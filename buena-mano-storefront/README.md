@@ -1,17 +1,27 @@
-# React + Vite
+#Buenamano store website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project consist on a SPA to showcase the work of Buenamano ice cream factory.
+Buenamano is a small business located in Pichilemu, Chile, where Dani and Renato produce artisanal ice creams with innovative flavours.
+Their aim is not only to give their clients the best products, offering options for diverse types of diets, but also to promote regional ingredients and sustainability.
+Due to the nature of the product, the creation of a traditional storefront that allow them to automatise sells is not required. Instead, we decided this website should focus on:
 
-Currently, two official plugins are available:
+1. Allow clients to have detailed information of the products.
+2. Expand the posibilities for new partnerships.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In order to achieve these goals, the website presents:
 
-Tailwinds
+1. Several menu forms where information about each product can be accesed in different levels of detail.
+2. An exclusive chanel of communication for HORECA customers (Hotels, Restaurants and Cafés).
+3. A homepage that showcase the history, mission and values of the company.
 
-https://react-slick.neostack.com/docs/get-started
+##Installation
 
-npm install react-slick --save
-npm install slick-carousel --save
+After cloning this repository, install react vite.
 
-npm install react-hook-form
+##How to use this project
+
+To use this project, it is necessary to install the following tools:
+
+- Vite+React
+- Tailwinds
+- React Slick

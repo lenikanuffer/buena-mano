@@ -13,12 +13,12 @@ const ProductCard = ({name, img, altText, description, localProduct, glutenFree,
 
     return (
        
-        <div className='card-container flex flex-col w-80  border border-solid rounded-xl p-4 '>
+        <div className='card-container flex flex-col w-80  border border-solid rounded-xl p-4'>
             <div className='image-title flex flex-col items-center mb-4'>
                 <h1 className='mb-4'>{name}</h1>
                 <img src={getImageUrl(img)} alt={altText} className='w-64 h-72 rounded-xl'/>
             </div>
-            <div className='content-container flex flex-col content-between '>
+            <div className='content-container mx-4 content-evenly'>
                 <div className='description text-justify mb-4'>
                     <p>{description}</p>
                 </div>
@@ -42,7 +42,7 @@ const ProductCard = ({name, img, altText, description, localProduct, glutenFree,
                     </div>
                     
                 </div>
-                <div className='button flex justify-end mt-4'>
+                <div className='button justify-end mt-4 flex '>
                         <Link href={`/Productos/${id}`}>
                         <Button className='default-bttn'>Detalles</Button>
                         </Link>

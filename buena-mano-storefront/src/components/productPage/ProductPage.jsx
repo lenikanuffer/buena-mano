@@ -1,4 +1,4 @@
-import { Route, useParams } from "wouter";
+import { useParams } from "wouter";
 import { Local, SugarFree, GlutenFree } from '../../assets/icons/icons'
 import ProductsPreview from '../productsPreview/ProductsPreview'
 import './ProductPage.css'
@@ -19,16 +19,16 @@ const ProductPage = () => {
   
     return (
     <>
-     <div className='product-container flex flex-col md:flex-row md:items-start '>
+     <div className='product-container flex flex-col md:flex-row md:items-start'>
         <div className='image-container flex flex-col items-center gap-5 p-5 pb-10 md:w-2/6 md:bg-white '>
-            <h1 className='text-sm text-center text-white md:text-black'>{name}</h1>
+            <h1 className='text-sm text-center text-white md:text-black uppercase'>{name}</h1>
             <img src={getImageUrl(imageUrl)} alt={altText} className='w-80 rounded-lg' />
         </div>
         <div className='description-icons-container flex text-sm m-5 gap-5 md:w-2/6 md:mt-14'>
             <div className='description text-justify w-2/4'>
                 <p>{description}</p>
             </div>
-            <div className='icons-list text-xs '>
+            <div className='icons-list text-xs  '>
                 <ul className='flex flex-col gap-2  sellos'>
                             {localProduct == true && <li className='flex items-center gap-3'> <Local /> Producto local</li>}
                             {glutenFree == true && <li className='flex items-center gap-3'> <GlutenFree /> Libre de gluten</li> }

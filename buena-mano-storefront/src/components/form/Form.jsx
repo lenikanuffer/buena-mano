@@ -78,6 +78,8 @@ export const Form = () => {
                 value={values[input.name]}
                 onChange={onChange}/>
             ))}
+            <label htmlFor="message" className='text-sm'>Tu mensaje</label>
+            <textarea className='contact-form border border-solid-bm' rows='6' placeholder='Tu mensaje' name='message'></textarea>
            
          
              <Button className='default-bttn button-bm w-1/4 text-white self-end'> Submit</Button>

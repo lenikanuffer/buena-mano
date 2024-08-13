@@ -16,6 +16,7 @@
 .visit-us-img {
   background-image: url("../../assets/images/aside1.jpg");
   background-size: cover;
+  border-radius: 10px;
 }
 
 .visit-us {
@@ -25,8 +26,12 @@
 .about-us-img {
   background-image: url("../../assets/images/nosotros.jpg");
   background-size: cover;
+  border-radius: 10px;
 }
 
+.welcome-text {
+  justify-content: end;
+}
 @media (min-width: 768px) {
   .hero-container {
     height: 90vh;

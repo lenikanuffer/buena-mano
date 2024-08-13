@@ -1,3 +1,8 @@
 img {
   object-fit: cover;
 }
+
+.card-container-snack {
+  border-color: var(--bmcolor);
+  height: 605px;
+}

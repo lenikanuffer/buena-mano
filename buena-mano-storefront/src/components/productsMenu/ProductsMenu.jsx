@@ -4,16 +4,19 @@ import './ProductsMenu.css'
 
 function ProductsMenu() {
     return (
-    <>
-       <div>
+    <main>
+        <section className='hero-menu'>
+
+        </section>
+       <section className='flex flex-col'>
         <h1 className='flex text-xs justify-center mt-14'>HELADOS</h1>
         <ProductsList />
-       </div>  
-       <div>
+       </section>  
+       <section>
         <h1 className='flex text-xs justify-center mt-14'>SNACKS</h1>
         <SnacksList />
-       </div>  
-       </>
+       </section>  
+       </main>
     )
 }
 

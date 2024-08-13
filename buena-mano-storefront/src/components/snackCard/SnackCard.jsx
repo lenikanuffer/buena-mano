@@ -11,14 +11,14 @@ const SnackCard = ({name, img, altText, description, localProduct, glutenFree, s
       }
 
     return (
-        <div className='card-container flex flex-col w-80 border border-solid rounded-xl p-4'>
+        <div className='card-container-snack flex flex-col w-80 border border-solid rounded-xl p-4'>
             <div className='image-title flex flex-col items-center mb-4'>
                 <h1 className='mb-4'>{name}</h1>
-                <img src={getImageUrl(img)} alt={altText} className='w-64 h-72 rounded-xl '/>
+                <img src={getImageUrl(img)} alt={altText} className='w-64 h-72 rounded-xl'/>
             </div>
-            <div className='content-container flex flex-col '>
+            <div className='content-container flex flex-col mx-4'>
                 <div className='description text-justify mb-4'>
-                    <p>{description}</p>
+                    <p className=''>{description}</p>
                 </div>
                 <div className='formats-sellos flex gap-14'>
                     <div className='formats'>
@@ -35,9 +35,8 @@ const SnackCard = ({name, img, altText, description, localProduct, glutenFree, s
                             {vegan == true && <li className='flex items-center gap-3'> <SugarFree /> Vegan</li>}
                         </ul>
                     </div>
-                    
                 </div>
-                <div className='button flex justify-end mt-4'>
+                <div className='button flex justify-end mt-4 '>
                 <Link href={`/Snacks/${id}`}>
                         <Button className='default-bttn'>Detalles</Button>
                 </Link>

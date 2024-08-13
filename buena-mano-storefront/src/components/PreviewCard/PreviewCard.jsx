@@ -10,7 +10,7 @@ const PreviewCard = ({name, img, altText, scoop, halfLitre, litre}) => {
 
     return (
 
-        <div className='preview-container flex flex-col w-72 h-72 items-center border '>
+        <div className='preview-container flex flex-col w-72 h-72 items-center'>
             <img src={getImageUrl(img)} alt={altText} className='w-36 h-36 rounded-xl  preview-img self-center mt-4' />
            
             <div className='flex flex-col mx-3 mt-2 w-36'>
