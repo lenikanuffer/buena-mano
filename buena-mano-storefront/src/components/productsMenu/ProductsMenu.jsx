@@ -5,7 +5,10 @@ import './ProductsMenu.css'
 function ProductsMenu() {
     return (
     <main>
-        <section className='hero-menu'>
+        <section className='hero-menu flex justify-end md:justify-start'>
+            <div className= 'text-white text-justify w-3/5 self-end m-4 md:text-xl md:w-1/5 md:self-start md:leading-loose md:m-12'>
+                <p>Descubre nuestro menú de Helados, snacks y cafés disponibles en nuestra fábrica. </p>
+            </div>
 
         </section>
        <section className='flex flex-col'>

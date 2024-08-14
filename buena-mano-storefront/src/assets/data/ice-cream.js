@@ -15,7 +15,6 @@ export const iceCreams = [
         halfLitre: 7000,
         litre: 12000,
         inStock: true,
-        productLink: '/VainillaMadagascar'
     },
 
     {
@@ -34,7 +33,6 @@ export const iceCreams = [
         halfLitre: 7000,
         litre: 12000,
         inStock: true,
-        productLink: '/ChocolabeBuenamano'
 
     },
 
@@ -54,7 +52,6 @@ export const iceCreams = [
         halfLitre: 7000,
         litre: 12000,
         inStock: true,
-        productLink: '/ChocolateFrambuesa'
 
     },
 
@@ -75,7 +72,6 @@ export const iceCreams = [
         halfLitre: 7000,
         litre: 12000,
         inStock: true,
-        productLink: '/CarameloSalado'
 
     },
 
@@ -96,7 +92,6 @@ export const iceCreams = [
         halfLitre: 7000,
         litre: 12000,
         inStock: true,
-        productLink: '/ChocolateVegano'
 
     },
 
@@ -116,7 +111,6 @@ export const iceCreams = [
         halfLitre: 7000,
         litre: 12000,
         inStock: true,
-        productLink: '/BlancoMaracuya'
 
     },
 

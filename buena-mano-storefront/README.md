@@ -1,4 +1,4 @@
-#Buenamano store website
+# Buenamano store website
 
 This project consist on a SPA to showcase the work of Buenamano ice cream factory.
 Buenamano is a small business located in Pichilemu, Chile, where Dani and Renato produce artisanal ice creams with innovative flavours.
@@ -11,17 +11,18 @@ Due to the nature of the product, the creation of a traditional storefront that 
 In order to achieve these goals, the website presents:
 
 1. Several menu forms where information about each product can be accesed in different levels of detail.
-2. An exclusive chanel of communication for HORECA customers (Hotels, Restaurants and Cafés).
+2. A communication chanel for HORECA (Hotels, Restaurants and Cafés) customers .
 3. A homepage that showcase the history, mission and values of the company.
 
-##Installation
+## Installation
 
 After cloning this repository, install react vite.
 
-##How to use this project
+## How to use this project
 
 To use this project, it is necessary to install the following tools:
 
 - Vite+React
 - Tailwinds
 - React Slick
+- Storybook

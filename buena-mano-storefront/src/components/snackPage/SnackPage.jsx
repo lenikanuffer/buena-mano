@@ -22,8 +22,8 @@ const SnackPage = () => {
     <>
      <div className='product-container flex flex-col md:flex-row md:items-start '>
         <div className='image-container flex flex-col items-center gap-5 p-5 pb-10 md:w-2/6 md:bg-white '>
-            <h1 className='text-sm text-center text-white md:text-black'>{name}</h1>
-            <img src={getImageUrl(imageUrl)} alt={altText} className='w-80 rounded-lg' />
+            <h1 className='text-sm text-center text-white md:text-black uppercase'>{name}</h1>
+            <img src={getImageUrl(imageUrl)} alt={altText} className='w-80 h-96 rounded-lg' />
         </div>
         <div className='description-icons-container flex text-sm m-5 gap-5 md:w-2/6 md:mt-14'>
             <div className='description text-justify w-2/4'>

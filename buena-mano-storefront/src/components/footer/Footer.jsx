@@ -1,3 +1,4 @@
+import {Link} from 'wouter';
 import { Instagram, Facebook, Tiktok } from '../../assets/icons/icons'
 import './Footer.css'
 
@@ -16,14 +17,20 @@ function Footer() {
         </div>
         <div className='flex flex-col md:flex-row my-6 gap-3 m-6 md:w-1/2 md:justify-around'>
             <ul className='flex md:flex-col justify-between '>
-                <li>INICIO</li>
-                <li>PRODUCTOS</li>
-                <li>CONTACTO</li>
+                <li>
+                    <Link href='/'>INICIO</Link></li>
+                <li>
+                    <Link href='/Productos'>PRODUCTOS</Link></li>
+                <li>
+                    <Link href='/Contacto'>CONTACTO</Link></li>
             </ul>
             <ul className='flex md:flex-col justify-between'>
-                <li>QUIENES SOMOS</li>
-                <li>CAFÉ</li>
-                <li>DISTRIBUIDORES</li>
+                <li>
+                    <Link href='/'>QUIENES SOMOS</Link></li>
+                <li>
+                    <Link href='/Contacto'>CAFÉ</Link></li>
+                <li>
+                    <Link href='/Horeca'>DISTRIBUIDORES</Link></li>
             </ul>
         </div>
         <div id='copyrights' className='flex flex-col mt-3 md:justify-end'>

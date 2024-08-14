@@ -9,8 +9,8 @@ function Home() {
     return (
     <>
         <main className='hero-container w-100 grid justify-items-end '>
-            <div className='welcome-text text-white text-justify w-3/5 flex flex-col gap-2 mr-4 md:mr-10 md:mb-4'>
-            <h1 className=''>¡Bienvenidos a Buenanamo!</h1>
+            <div className='welcome-text text-white text-justify w-3/5 flex flex-col gap-2 mb-4 mr-6 md:mr-10 md:mb-4'>
+            <h1 className=''>¡Bienvenidos a Buenamano!</h1>
             <h2> Helados de autor</h2>
             <p className='bm-intro flex flex-col'> 
             Fabricamos nuestros helados con productos de calidad,

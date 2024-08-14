@@ -66,7 +66,5 @@ ProductCard.propTypes = {
     scoop: PropTypes.number,
     halfLitre: PropTypes.number,
     litre: PropTypes.number,
-    productLink: PropTypes.string,
     id: PropTypes.number
-
 }
