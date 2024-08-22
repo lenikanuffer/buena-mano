@@ -54,7 +54,7 @@ const ProductPage = () => {
         </div>
      </div>
      <aside>
-        <h1 className='flex text-xs justify-center mt-14'>PRODUCTOS RECOMENDADOS</h1>
+        <h1 className='flex text-xs justify-center mt-14'>PRODUCTOS RECOMENDADOS..</h1>
         <ProductsPreview />
      </aside>
        </>
