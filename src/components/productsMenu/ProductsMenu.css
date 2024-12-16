@@ -1,0 +1,19 @@
+.hero-menu {
+  background-image: url("../../assets/images/hero-option.jpg");
+  background-color: rgba(2, 2, 2, 0.235);
+  width: 100vw;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 30%;
+  background-position-y: center;
+  background-blend-mode: multiply;
+}
+
+@media (min-width: 768px) {
+  .hero-menu {
+    height: 90vh;
+    background-position-y: 35%;
+    background-size: cover;
+  }
+}

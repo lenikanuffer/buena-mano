@@ -1,0 +1,8 @@
+.button-det {
+  background-color: var(--bmcolor);
+}
+
+.card-container {
+  border-color: var(--bmcolor);
+  height: 700px;
+}

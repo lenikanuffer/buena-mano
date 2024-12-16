@@ -1,0 +1,8 @@
+header {
+  margin: 0 auto;
+}
+
+.active-font {
+  color: var(--bmcolor);
+  font-weight: bold;
+}

@@ -1,0 +1,14 @@
+.preview-img {
+  border-left: 2px solid var(--bmcolor);
+  border-bottom: 3px solid var(--bmcolor);
+  border-top: 1px solid var(--bmcolor);
+  border-right: 1px solid var(--bmcolor);
+}
+
+.formats {
+  font-size: 11px;
+}
+
+.flavour {
+  font-size: 13px;
+}
